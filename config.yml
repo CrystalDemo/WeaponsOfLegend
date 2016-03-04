@@ -1,0 +1,52 @@
+Items:
+    Banhammer Item: 257
+    Vulcan Hammer Item: 274
+    Thor Hammer Item: 286
+    Meteor Staff Item: 369
+    Demon Scythe Item: 294
+    Glacier Staff Item: 352
+Thor:
+    Thor Lightning Damage: 7
+    Limits:
+        Thor Chance (percent): 60.0
+        Thor Cooldown (seconds): 10
+Vulcan:
+    Vulcan Burn Radius: 5
+    Limits:
+        Vulcan Chance (percent): 60.0
+        Vulcan Cooldown (seconds): 10
+Meteor:
+    Meteor Explosion Radius: 3
+    Meteor Explosion Sets Fire: true
+    Meteor Burns Target: true
+    Meteor Target Burn Time (seconds): 2
+    Meteor Target Burn Chance (percent): 60.0
+    Meteor Health Damage Amount: 7
+    Limits:
+        Meteor Chance (percent): 60.0
+        Meteor Cooldown (seconds): 10
+Demon:
+    Demon Curse Length (seconds): 8
+    Demon Curse Power: 2
+    Melee:
+        Scythe Damage: 7
+        Poison Chance (percent): 30.0
+        Poison Length (seconds): 5
+        Poison Strength: 2
+    Limits:
+        Demon Chance (percent): 60.0
+        Demon Cooldown (seconds): 10
+Glacier:
+    Glacier Freeze Radius: 5
+    Glacier Ice Duration (seconds): 10
+    Glacier Freeze Damage: 10
+    Glacier Slowness Length (seconds): 10
+    Glacier Slowness Strength: 3
+    Glacier Effect Lays Snow: false
+    Limits:
+        Glacier Chance (percent): 60.0
+        Glacier Cooldown (seconds): 10
+Limits:
+    Max Ability Effect Distance: 600
+    Use Percent Limits: false
+    Use Cooldown Limits: true

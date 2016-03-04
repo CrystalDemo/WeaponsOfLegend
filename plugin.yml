@@ -1,0 +1,94 @@
+name: WeaponsOfLegend-Unofficial
+main: com.DragonSoulSong.Wl.WeaponsOfLegend
+author: Shijekii
+description: A plugin that allows those with the permission (ops by default) to use preset items (configurable) as different "legendary weapons" by holding them and right-clicking with their crosshairs aimed at an appropriate target within visual distance.
+version: 2.1
+permissions:
+    wol.*:
+        description: Gives access to the ability to use all of the weapons (except for Banhammer*) and all associated commands.
+        children:
+            wol.commands: true
+            wol.use: true
+    wol.commands:
+        description: Gives access to all of this plugin's commands.
+        children:
+            wol.legend: true
+            wol.legend.version: true
+            wol.legend.reload: true
+            wol.legend.toggle: true
+            wol.legend.give: true
+    wol.use:
+        description: Gives the ability to use all of this plugin's weapons (*except for Banhammer, which is op-only).
+        children:
+            wol.use.thor: true
+            wol.use.vulcan: true
+            wol.use.meteor: true
+            wol.use.demon: true
+            wol.use.glacier: true
+    wol.legend.give:
+        description: Gives access to the command "/lg give <thor | banhammer | vulcan | meteor | demon | glacier>".
+        children:
+            wol.legend.give.thor: true
+            wol.legend.give.banhammer: true
+            wol.legend.give.vulcan: true
+            wol.legend.give.meteor: true
+            wol.legend.give.demon: true
+            wol.legend.give.glacier: true
+    wol.legend:
+        description: Gives access to the command "/lg".
+        default: op
+    wol.legend.version:
+        description: Gives access to the command "/lg <version | v>".
+        default: op
+    wol.legend.reload:
+        description: Gives access to the command "/lg <reload | r>".
+        default: op
+    wol.legend.toggle:
+        description: Gives access to the command "/lg <playerName>".
+        default: op
+    wol.use.thor:
+        description: Allows the use of Thor's Hammer.
+        default: not op
+    wol.use.vulcan:
+        description: Allows the use of Vulcan's Hammer.
+        default: not op
+    wol.use.meteor:
+        description: Allows the use of the Meteor Staff.
+        default: not op
+    wol.use.demon:
+        description: Allows the use of the Demon Scythe.
+        default: not op
+    wol.use.glacier:
+        description: Allows the use of the Glacier Staff.
+        default: not op
+    wol.legend.give.thor:
+        description: Gives access to the command "/lg give thor".
+        default: op
+    wol.legend.give.banhammer:
+        description: Gives access to the command "/lg give banhammer".
+        default: op
+    wol.legend.give.vulcan:
+        description: Gives access to the command "/lg give vulcan".
+        default: op
+    wol.legend.give.meteor:
+        description: Gives access to the command "/lg give meteor".
+        default: op
+    wol.legend.give.demon:
+        description: Gives access to the command "/lg give demon".
+        default: op
+    wol.legend.give.glacier:
+        description: Gives access to the command "/lg give glacier".
+        default: op
+    wol.limits.bypass:
+        description: Allows player to bypass/ignore % chance success checks, cooldown times, and other ability limits.
+        default: op
+commands:
+    lg:
+        description: Handles a number of Weapons_of_Legend functions, the specific action being specified using certain arguments.
+        aliases: legend
+        usage: |
+               /lg
+               /lg <playerName>
+               /lg <version | v>
+               /lg <reload | r>
+               /lg <give | g> <thor | banhammer | vulcan | meteor | demon | glacier>
